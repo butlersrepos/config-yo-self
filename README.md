@@ -1,2 +1,2 @@
 # config-yo-self
-A collection of quickstart items for new environments
+A collection of personalized quickstart items for new environments
