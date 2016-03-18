@@ -1,6 +1,15 @@
 # Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# Git
+brew install git
+
+# Git completion
+brew install bash-completion
+echo "if [ -f `brew --prefix`/etc/bash_completion ]; then" >> ~/.bash_profile
+echo "    . `brew --prefix`/etc/bash_completion" >> ~/.bash_profile
+echo "fi" >> ~/.bash_profile
+
 # FZF
 brew install fzf
 /usr/local/fzf/install
