@@ -1,0 +1,15 @@
+# Brew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# FZF
+brew install fzf
+/usr/local/fzf/install
+echo "[ -f ~/.fzf.bash ] && source ~/.fzf.bash" >> ~/.bash_profile
+
+# Tree command
+brew install tree
+
+# Sublime Text 3
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+brew cask install sublime-text3
