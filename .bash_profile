@@ -1,14 +1,21 @@
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
-export ANDROID_HOME=/Library/android-sdk-macosx
-export NODE_PATH=/usr/local/lib/node_modules
+
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
 
 export PATH=$PATH:/Applications
-export PATH=$PATH:$NODE_PATH
 
 alias ls='ls -AlGFh'
 alias gs='git status'
+alias gd='git diff'
+alias gp='git pull'
+alias gco='git checkout'
 alias servenow="python -m SimpleHTTPServer 8000"
+
+if [ -f /usr/local/etc/bash_completion ]; then
+    . /usr/local/etc/bash_completion
+fi
 
 # Autocomplete GIT commands
 _GIT_PREFIX=/Applications/Xcode.app/Contents/Developer/usr/share/git-core/
