@@ -19,3 +19,6 @@ brew install fzf
 
 # Tree command
 brew install tree
+
+# VS Code
+brew cask install visual-studio-code
