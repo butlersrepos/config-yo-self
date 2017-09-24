@@ -7,13 +7,13 @@ brew install git
 brew install nvm
 mkdir ~/.nvm
 
-# Git completion
+# Git auto completion for commands and branch names
 brew install bash-completion
 echo "if [ -f `brew --prefix`/etc/bash_completion ]; then" >> ~/.bash_profile
 echo "    . `brew --prefix`/etc/bash_completion" >> ~/.bash_profile
 echo "fi" >> ~/.bash_profile
 
-# FZF
+# Fuzzy Finder addon for CLI, ctrl+T and ctrl+R
 brew install fzf
 /usr/local/opt/fzf/install
 
