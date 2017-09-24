@@ -12,13 +12,7 @@ echo "fi" >> ~/.bash_profile
 
 # FZF
 brew install fzf
-/usr/local/fzf/install
-echo "[ -f ~/.fzf.bash ] && source ~/.fzf.bash" >> ~/.bash_profile
+/usr/local/opt/fzf/install
 
 # Tree command
 brew install tree
-
-# Sublime Text 3
-brew install caskroom/cask/brew-cask
-brew tap caskroom/versions
-brew cask install sublime-text3
