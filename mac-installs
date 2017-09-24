@@ -3,6 +3,9 @@
 
 # Git
 brew install git
+# NVM for managing node
+brew install nvm
+mkdir ~/.nvm
 
 # Git completion
 brew install bash-completion
