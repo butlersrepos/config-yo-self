@@ -3,15 +3,18 @@
 
 # Git
 brew install git
-# NVM for managing node
+
+# NVM and Node setup
 brew install nvm
 mkdir ~/.nvm
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+nvm install node
+nvm install-latest-npm
+echo $(nvm current) > ~/.nvmrc
 
-# Git auto completion for commands and branch names
+# Git auto completion for commands and branch names, bootstrap command is already placed in the .bash_profile of this repo
 brew install bash-completion
-echo "if [ -f `brew --prefix`/etc/bash_completion ]; then" >> ~/.bash_profile
-echo "    . `brew --prefix`/etc/bash_completion" >> ~/.bash_profile
-echo "fi" >> ~/.bash_profile
 
 # Fuzzy Finder addon for CLI, ctrl+T and ctrl+R
 brew install fzf
