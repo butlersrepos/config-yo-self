@@ -1,0 +1,27 @@
+# Brew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Git
+brew install git
+
+# NVM and Node setup
+brew install nvm
+mkdir ~/.nvm
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+nvm install node
+nvm install-latest-npm
+echo $(nvm current) > ~/.nvmrc
+
+# Git auto completion for commands and branch names, bootstrap command is already placed in the .bash_profile of this repo
+brew install bash-completion
+
+# Fuzzy Finder addon for CLI, ctrl+T and ctrl+R
+brew install fzf
+/usr/local/opt/fzf/install
+
+# Tree command
+brew install tree
+
+# VS Code
+brew cask install visual-studio-code
