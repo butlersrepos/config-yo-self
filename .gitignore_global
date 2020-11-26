@@ -21,7 +21,6 @@ bower_components
 
 # VS Code #
 ###########
-typings
 .vscode
 
 # Eclipse #
