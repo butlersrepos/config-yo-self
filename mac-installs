@@ -1,8 +1,11 @@
 # Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+brew cask install iterm2
+
 # Git
 brew install git
+brew install git-delta
 
 # NVM and Node setup
 brew install nvm
@@ -22,6 +25,15 @@ brew install fzf
 
 # Tree command
 brew install tree
+
+brew install ripgrep
+brew install jq
+brew cask install ngrok
+
+# ZSHell
+brew install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+chsh -s $(which zsh)
 
 # VS Code
 brew cask install visual-studio-code

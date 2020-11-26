@@ -1,0 +1,25 @@
+[core]
+        excludesfile = /Users/ebutler/.gitignore_global
+        editor = /usr/bin/vim
+        pager = delta # For dandavision/delta git diff tool
+[difftool "sourcetree"]
+        cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+        path = 
+[mergetool "sourcetree"]
+        cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+        trustExitCode = true
+[user]
+        name = Eric Butler
+        email = ericbutler000@gmail.com
+[http]
+        cookiefile = /Users/ebutler/.gitcookies
+[commit]
+        template = /Users/ebutler/.stCommitMsg
+[pull]
+        rebase = false
+[delta] # For dandavision/delta git diff tool
+        plus-color = "#012800"
+        minus-color = "340001"
+        syntax-theme = Monokai Extended
+[interactive] # For dandavision/delta git diff tool
+        diffFilter = delta --color-only
