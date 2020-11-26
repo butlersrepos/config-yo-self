@@ -9,8 +9,13 @@ export PATH=$PATH:/Applications
 alias ls='ls -AlGFh'
 alias gs='git status'
 alias gd='git diff'
-alias gp='git pull'
+alias gl='git pull'
+alias ga='git add'
+alias gdca='git diff --cached'
+alias gaa='git add --all'
 alias gco='git checkout'
+alias gcam='git commit --all -m'
+alias gpo='git push origin -u $(git branch 2> /dev/null | sed -e '"'"'/^[^*]/d'"'"' -e '"'"'s/* \(.*\)/\1/'"'"')'
 alias servenow="python -m SimpleHTTPServer 8000"
 
 if [ -f /usr/local/etc/bash_completion ]; then
