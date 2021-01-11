@@ -1,7 +1,7 @@
 # Brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-brew cask install iterm2
+brew install --cask iterm2
 
 # Git
 brew install git
@@ -28,7 +28,7 @@ brew install tree
 
 brew install ripgrep
 brew install jq
-brew cask install ngrok
+brew install --cask ngrok
 
 # ZSHell
 brew install zsh
@@ -36,4 +36,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 chsh -s $(which zsh)
 
 # VS Code
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
